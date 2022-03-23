@@ -13,10 +13,11 @@ export default function Navbar () {
     <NavbarContainer id='mySidenav'>
       <nav>
         <NavLink to='/' onClick={closeBtn} className='closebtn'>&times;</NavLink>
-        <NavLink to='/About'>About</NavLink>
-        <NavLink to='/Skill'>Skill</NavLink>
-        <NavLink to='/Project'>Project</NavLink>
-        <NavLink to='/Contact'>Contact</NavLink>
+        <NavLink to='/About' onClick={closeBtn}>About</NavLink>
+        <NavLink to='/Skill' onClick={closeBtn}>Skill</NavLink>
+        <NavLink to='/Education' onClick={closeBtn}>Education</NavLink>
+        <NavLink to='/Project' onClick={closeBtn}>Project</NavLink>
+        <NavLink to='/Contact' onClick={closeBtn}>Contact</NavLink>
       </nav>
       <Outlet />
     </NavbarContainer>
